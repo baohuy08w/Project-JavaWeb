@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f2f2f2;
@@ -10,11 +9,9 @@ body {
     padding: 25px 30px;
     font-size: 16px;
 }
-
 main {
     width: 620px;
 }
-
 main > img {
     display: block;
     width: 80px;
@@ -47,7 +44,6 @@ section {
     margin-bottom: 22px;
 }
 
-/* Các dòng label + input */
 .form-row,
 .contact-row {
     display: flex;
@@ -71,8 +67,6 @@ section {
     font-size: 15px;
     background-color: white;
 }
-
-/* Radio */
 .radio-group {
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +81,6 @@ section {
     gap: 4px;
 }
 
-/* Checkbox */
 .checkbox-row {
     margin-bottom: 8px;
 }
@@ -99,7 +92,6 @@ section {
     gap: 6px;
 }
 
-/* Select box */
 select {
     width: 155px;
     height: 30px;
@@ -108,7 +100,6 @@ select {
     background-color: white;
 }
 
-/* Nút submit */
 input[type="submit"] {
     margin-top: 10px;
     padding: 5px 14px;
