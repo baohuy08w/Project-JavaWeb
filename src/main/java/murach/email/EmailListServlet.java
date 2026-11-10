@@ -35,14 +35,14 @@ public class EmailListServlet extends HttpServlet {
         } else if (action.equals("add")) {
 
             // Get parameters from request
-            String firstName =
-                    request.getParameter("firstName");
-
-            String lastName =
-                    request.getParameter("lastName");
-
-            String email =
-                    request.getParameter("email");
+            String firstName =  request.getParameter("firstName");
+            String lastName =  request.getParameter("lastName");
+            String email = request.getParameter("email");
+            String dateOfBirth = request.getParameter("dateOfBirth");
+            String heardFrom = request.getParameter("heardFrom");
+            String announcements = request.getParameter("announcements");
+            String emailUpdates = request.getParameter("emailUpdates");
+            String contactVia = request.getParameter("contactVia");
 
             // Create User object
             User user = new User(

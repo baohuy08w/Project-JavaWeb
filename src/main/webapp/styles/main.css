@@ -1,31 +1,123 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11pt;
-    margin-left: 2em;
-    margin-right: 2em;
+    background-color: #f2f2f2;
+    color: #000;
+    margin: 0;
+    padding: 25px 30px;
+    font-size: 16px;
+}
+
+main {
+    width: 620px;
+}
+
+main > img {
+    display: block;
+    width: 80px;
+    margin-bottom: 18px;
+}
+
+header {
+    margin-bottom: 18px;
 }
 
 h1 {
-    color: teal;
+    color: #0b7f86;
+    font-size: 28px;
+    margin: 0 0 12px 0;
 }
 
-label {
-    float: left;
-    width: 6em;
-    margin-bottom: 0.5em;
+h2 {
+    color: #0b7f86;
+    font-size: 22px;
+    margin: 0 0 12px 0;
 }
 
-input[type="text"], input[type="email"] {
-    width: 15em;
-    margin-left: 0.5em;
-    margin-bottom: 0.5em;
+p {
+    margin: 0 0 18px 0;
+    line-height: 1.35;
+    max-width: 470px;
 }
 
-br {
-    clear: both;
+section {
+    margin-bottom: 22px;
 }
 
-#submit {
-    margin-left: 0.5em;
+/* Các dòng label + input */
+.form-row,
+.contact-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label,
+.contact-row label {
+    width: 145px;
+    font-weight: bold;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="date"] {
+    width: 230px;
+    height: 28px;
+    padding: 4px 6px;
+    border: 1px solid #888;
+    font-size: 15px;
+    background-color: white;
+}
+
+/* Radio */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 4px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Checkbox */
+.checkbox-row {
+    margin-bottom: 8px;
+}
+
+.checkbox-row label {
+    font-weight: normal;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+/* Select box */
+select {
+    width: 155px;
+    height: 30px;
+    border: 1px solid #888;
+    font-size: 15px;
+    background-color: white;
+}
+
+/* Nút submit */
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 5px 14px;
+    font-size: 15px;
+    border: 1px solid #777;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e6e6e6;
 }
